@@ -34,3 +34,12 @@ vignettes/*.pdf
 # Temporary files created by R markdown
 *.utf8.md
 *.knit.md
+
+# Other files
+.Rproj.user
+.Rhistory
+.RData
+.Ruserdata
+
+worked_example/data/environmental_layers/
+
