@@ -9,6 +9,8 @@
 #        (1) a locality ID column, (2) longitude, and (3)latitude
 # - locality_col: Name of the column in {{ data }} containing a string of the 
 #                 locality ID 
+# - height: Reference height at which to extract meteorological data 
+#           (defaults to 1.2m above the ground)
 
 # Load required packages 
 if (!require("pacman"))
@@ -16,7 +18,8 @@ if (!require("pacman"))
 pacman::p_load(
   dplyr,
   magrittr,
-  purrr
+  purrr,
+  NicheMapR
 )
 
 # Simulate a dataframe of GPS points
@@ -33,7 +36,7 @@ head(gps_pts)
 # Define function 
 #################
 
-get_microclim_data <- function(data, locality_col){
+get_microclim_data <- function(data, locality_col, height = 1.2){
 
   # Step 1: Split the GPS data by locality 
   by_location <- {{ data }} %>%
@@ -52,7 +55,8 @@ get_microclim_data <- function(data, locality_col){
             .f = function(x, y) {
               base::as.data.frame(NicheMapR::micro_global(
                 loc = c(x, y) ,
-                timeinterval = 365
+                timeinterval = 365,
+                Refhyt = {{ height }}
               )$metout)
             }
           )

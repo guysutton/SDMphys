@@ -1,1 +1,1 @@
-# SDMphys
+# SDMphys *R* package 
