@@ -1,0 +1,42 @@
+********************************************** 
+ Beginning Spatial Thinning.
+ Script Started at: Wed Jun 14 13:26:01 2023
+
+Thinning Parameter Used (in km): 1
+Number of replicates of thinning script: 100
+
+Elapsed time for thinning completion
+1.48 0.05 1.91 NA NA
+
+Number of data.frames per locations retained
+loc.cnt df.freq
+2178
+100
+Maximum number of records after thinning: 2178
+Number of data.frames with max records: 100
+
+**New *.csv file creation:**
+Created new output directory: C:/Users/s1900332/OneDrive - Rhodes University/Statistics/_r_packages/SDMphys/./data/gps/spatial_thin
+Writing file: C:/Users/s1900332/OneDrive - Rhodes University/Statistics/_r_packages/SDMphys/./data/gps/spatial_thin/gps_thinned_aph_non_thin1.csv
+********************************************** 
+ Beginning Spatial Thinning.
+ Script Started at: Wed Jun 14 14:15:56 2023
+
+Thinning Parameter Used (in km): 1
+Number of replicates of thinning script: 100
+
+Elapsed time for thinning completion
+2.02 0.04 2.42 NA NA
+
+Number of data.frames per locations retained
+loc.cnt df.freq
+2178
+100
+Maximum number of records after thinning: 2178
+Number of data.frames with max records: 100
+
+**New *.csv file creation:**
+Writing new *.csv files to output directory: C:/Users/s1900332/OneDrive - Rhodes University/Statistics/_r_packages/SDMphys/./data/gps/spatial_thin
+C:/Users/s1900332/OneDrive - Rhodes University/Statistics/_r_packages/SDMphys/./data/gps/spatial_thin/gps_thinned_aph_non_thin1_new.csv ' already exists. Renaming file 
+                                   to avoid overwriting.
+Writing file: C:/Users/s1900332/OneDrive - Rhodes University/Statistics/_r_packages/SDMphys/./data/gps/spatial_thin/gps_thinned_aph_non_thin1_new.csv
